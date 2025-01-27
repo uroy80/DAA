@@ -1,17 +1,64 @@
-# DAA
-The Siruseri Singing Championship
-(Zonal Computing Olympiad 2019)
+# DAA Repository
 
-The Siruseri Singing Championship is going to start, and Lavanya wants to figure out the outcome before the tournament even begins! Looking at past tournaments, she realizes that the judges care only about the pitches that the singers can sing in, and so she devises a method through which she can accurately predict the outcome of a match between any two singers.
+Welcome to the **DAA Repository**! This repository is a collection of codes, algorithms, and notes related to the **Design and Analysis of Algorithms (DAA)** course. It aims to serve as a comprehensive resource for learning and revising key concepts in DAA.
 
-She represents various pitches as integers and has assigned a lower limit and an upper limit for each singer, which corresponds to their vocal range. For any singer, the lower limit will always be less than the upper limit. If a singer has lower limit L and upper limit U (L < U), it means that this particular singer can sing in all the pitches between L and U, that is they can sing in the pitches {L, L+1, L+2, …, U}.
+---
 
-The lower bounds and upper bounds of all the singers are distinct. When two singers Si and Sj with bounds (Li, Ui) and (Lj, Uj) compete against each other, Si wins if they can sing in every pitch that Sj can sing in, and some more pitches. Similarly, Sj wins if they can sing in every pitch that Si can sing in, and some more pitches. If neither of these conditions are met, the match ends in a draw. In this problem, you can assume that no match ends in a draw.
+## Features
 
-N singers are competing in the tournament. Each singer competes in N-1 matches, one match against each of the other singers. The winner of a match scores 2 points, and the loser gets no points. But in case of a draw, both the singers get 1 point each.
+- 📚 **Well-Documented Codes**: Each algorithm is thoroughly documented with explanations.
+- 🧪 **Test Cases**: Every code includes test cases to validate correctness.
+- 🚀 **Optimized Solutions**: Focused on writing efficient and clean code.
+- 📂 **Organized Structure**: All files are categorized for easy navigation.
 
-You are given the lower and upper bounds of all the N singers. You need to output the total scores of each of the $N$ singers at the end of the tournament.
+---
 
-Solution hint
-Since no match ends in a draw, for any pair of singers Si and Sj, one of their vocal ranges is strictly included in the other. Deduce that, across all singers, the vocal ranges form a sequence where each interval is strictly included in the previous one. You can then sort the starting points of the vocal ranges and determine how many matches each singer wins from the position of their starting point in this sorted sequence.
+## Contents
 
+1. **Sorting Algorithms**
+   - Bubble Sort
+   - Merge Sort
+   - Quick Sort
+
+2. **Searching Algorithms**
+   - Binary Search
+   - Linear Search
+
+3. **Graph Algorithms**
+   - Dijkstra's Algorithm
+   - Floyd-Warshall Algorithm
+
+4. **Dynamic Programming**
+   - Longest Common Subsequence (LCS)
+   - 0/1 Knapsack Problem
+
+5. **Greedy Algorithms**
+   - Huffman Encoding
+   - Kruskal's Algorithm
+
+6. **Divide and Conquer**
+   - Strassen's Matrix Multiplication
+   - Closest Pair of Points
+
+---
+
+## Contribution Guidelines
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add a new feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
+
+---
+
+## Contact
+
+- **GitHub Profile**: [uroy80](https://github.com/uroy80)
+- **Email**: ushamroy80@gmail.com
+
+---
+
+### Happy Coding! 😊
