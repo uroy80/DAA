@@ -137,7 +137,7 @@ int main() {
 
 📌 **Used in educational purposes to teach sorting concepts.**
 
-### **Visualization Using Mermaid.js**
+### **Graphical Representation**
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"background": "#f4f4f4", "fontFamily": "Arial", "fontSize": "16px"}}}%%
 graph TD;
