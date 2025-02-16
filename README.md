@@ -107,20 +107,26 @@ int main() {
 
 ### **Visualization Using Mermaid.js**
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"background": "#f4f4f4", "fontFamily": "Arial", "fontSize": "16px"}}}%%
 graph TD;
+    subgraph uroy80
     A[5, 3, 8, 6, 2] --> B[3, 5, 8, 6, 2];
     B --> C[3, 5, 8, 6, 2];
     C --> D[3, 5, 6, 8, 2];
     D --> E[2, 3, 5, 6, 8];
+    end
 ```
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"background": "#f4f4f4", "fontFamily": "Arial", "fontSize": "16px"}}}%%
 graph LR;
+    subgraph uroy80
     A[Unsorted: 5, 3, 8, 6, 2] -->|Insert 3| B[3, 5, 8, 6, 2];
     B -->|Insert 8| C[3, 5, 8, 6, 2];
     C -->|Insert 6| D[3, 5, 6, 8, 2];
     D -->|Insert 2| E[2, 3, 5, 6, 8];
-    E -->|Sorted| F[(Final Sorted Array)]
+    E -->|Sorted| F[(Final Sorted Array)];
+    end
 ```
 
 ---
