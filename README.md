@@ -67,7 +67,9 @@ InsertionSort(A, n)
 4.     while j >= 0 and A[j] > key
 5.         A[j + 1] = A[j]
 6.         j = j - 1
-7.     A[j + 1] = key
+7.     A[j + 1] = key```
+
+---
 
 
 ## Contribution Guidelines
