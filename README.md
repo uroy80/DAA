@@ -54,7 +54,7 @@ Insertion Sort is a simple and efficient comparison-based sorting algorithm that
 3. Shift elements to the right to make space for the correct position of the current element.
 4. Repeat until the array is sorted.
 
-### **Pseudo Code **
+### **Pseudo Code**
 
 ```plaintext
 for(i=1;i<size;i++)
