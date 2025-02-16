@@ -93,16 +93,21 @@ int main() {
 
 ### **Advantages**
 ✔ Efficient for small data sets.
+
 ✔ Simple and easy to implement.
+
 ✔ Stable sorting algorithm (preserves the order of equal elements).
 
 ### **Disadvantages**
 ✖ Not suitable for large data sets due to `O(n²)` complexity.
+
 ✖ Inefficient compared to Quick Sort and Merge Sort.
 
 ### **Applications**
 📌 **Used in small databases where simplicity matters.**
+
 📌 **Effective for nearly sorted data (adaptive sorting).**
+
 📌 **Used in educational purposes to teach sorting concepts.**
 
 ### **Visualization Using Mermaid.js**
