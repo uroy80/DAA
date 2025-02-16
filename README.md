@@ -72,32 +72,45 @@ for(i=1;i<size;i++)
 ```c
 #include <stdio.h>
 
-void insertionSort(int arr[], int n) {
-    for (int i = 1; i < n; i++) {
-        int key = arr[i];
-        int j = i - 1;
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j--;
+void insertionSort(int list[], int size) {
+    int temp, j;
+    for (int i = 1; i < size; i++) {
+        temp = list[i];
+        j = i - 1;
+
+        // Move elements of list[0..i-1] that are greater than temp to one position ahead
+        while (j >= 0 && list[j] > temp) {
+            list[j + 1] = list[j];
+            j = j - 1;
         }
-        arr[j + 1] = key;
+
+        // Insert temp into the correct position
+        list[j + 1] = temp;
     }
 }
 
-void printArray(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        printf("%d ", arr[i]);
+void printArray(int list[], int size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", list[i]);
     }
     printf("\n");
 }
 
 int main() {
-    int arr[] = {5, 3, 8, 6, 2};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    insertionSort(arr, n);
-    printArray(arr, n);
+    int list[] = {12, 11, 13, 5, 6};
+    int size = sizeof(list) / sizeof(list[0]);
+
+    printf("Original array: \n");
+    printArray(list, size);
+
+    insertionSort(list, size);
+
+    printf("Sorted array: \n");
+    printArray(list, size);
+
     return 0;
 }
+
 ```
 
 ### **Time Complexity Analysis**
