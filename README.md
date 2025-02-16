@@ -16,28 +16,29 @@ Welcome to the **DAA Repository**! This repository is a collection of codes, alg
 ## Contents
 
 1. **Sorting Algorithms**
+
+   - Insertion Sort
    - Bubble Sort
    - Merge Sort
    - Quick Sort
-   - Insertion Sort (New)
-
-2. **Searching Algorithms**
+  
+3. **Searching Algorithms (Not Added)**
    - Binary Search
    - Linear Search
 
-3. **Graph Algorithms**
+4. **Graph Algorithms (Not Added)**
    - Dijkstra's Algorithm
    - Floyd-Warshall Algorithm
 
-4. **Dynamic Programming**
+5. **Dynamic Programming (Not Added)**
    - Longest Common Subsequence (LCS)
    - 0/1 Knapsack Problem
 
-5. **Greedy Algorithms**
+6. **Greedy Algorithms(Not Added)**
    - Huffman Encoding
    - Kruskal's Algorithm
 
-6. **Divide and Conquer**
+7. **Divide and Conquer (Contents are on-the-way......Coming Soon)**
    - Strassen's Matrix Multiplication
    - Closest Pair of Points
 
