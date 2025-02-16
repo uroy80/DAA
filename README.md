@@ -42,6 +42,34 @@ Welcome to the **DAA Repository**! This repository is a collection of codes, alg
 
 ---
 
+# Insertion Sort Algorithm
+
+## Introduction
+Insertion Sort is a simple and efficient **comparison-based sorting algorithm**. It works similarly to how we sort playing cards in our hands. The algorithm builds the sorted list one element at a time by **inserting** each element into its correct position.
+
+---
+
+## Algorithm Steps
+1. Assume the first element is already sorted.
+2. Pick the next element and compare it with elements in the sorted part.
+3. Shift elements to the right until the correct position for the current element is found.
+4. Insert the element at its correct position.
+5. Repeat for all elements.
+
+---
+
+## Pseudocode
+```plaintext
+InsertionSort(A, n)
+1. for i = 1 to n-1
+2.     key = A[i]
+3.     j = i - 1
+4.     while j >= 0 and A[j] > key
+5.         A[j + 1] = A[j]
+6.         j = j - 1
+7.     A[j + 1] = key
+
+
 ## Contribution Guidelines
 
 Contributions are welcome! Please follow these steps:
