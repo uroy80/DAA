@@ -54,6 +54,20 @@ Insertion Sort is a simple and efficient comparison-based sorting algorithm that
 3. Shift elements to the right to make space for the correct position of the current element.
 4. Repeat until the array is sorted.
 
+### **Pseudo Code **
+
+```plaintext
+for(i=1;i<size;i++)
+{
+   temp=list[i];
+      j=i-1;
+   while((temp<list[j]) && (j>=0))
+   {
+      list[j+1]=list[j];
+         j=j-1;
+   }
+} list[j+1]=temp;
+```
 ### **Code Implementation in C**
 ```c
 #include <stdio.h>
