@@ -19,6 +19,7 @@ Welcome to the **DAA Repository**! This repository is a collection of codes, alg
    - Bubble Sort
    - Merge Sort
    - Quick Sort
+   - Insertion Sort (New)
 
 2. **Searching Algorithms**
    - Binary Search
@@ -42,46 +43,87 @@ Welcome to the **DAA Repository**! This repository is a collection of codes, alg
 
 ---
 
-# Insertion Sort Algorithm
+## 📌 Chapter: Insertion Sort
 
-## Introduction
-Insertion Sort is a simple and efficient **comparison-based sorting algorithm**. It works similarly to how we sort playing cards in our hands. The algorithm builds the sorted list one element at a time by **inserting** each element into its correct position.
+### **Introduction**
+Insertion Sort is a simple and efficient comparison-based sorting algorithm that builds the final sorted array one element at a time.
 
----
+### **Algorithm**
+1. Iterate from index `1` to `n-1`.
+2. Compare the current element with its predecessors.
+3. Shift elements to the right to make space for the correct position of the current element.
+4. Repeat until the array is sorted.
 
-## Algorithm Steps
-1. Assume the first element is already sorted.
-2. Pick the next element and compare it with elements in the sorted part.
-3. Shift elements to the right until the correct position for the current element is found.
-4. Insert the element at its correct position.
-5. Repeat for all elements.
+### **Code Implementation in C**
+```c
+#include <stdio.h>
 
----
+void insertionSort(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+}
 
-## Pseudocode
-```plaintext
-InsertionSort(A, n)
-1. for i = 1 to n-1
-2.     key = A[i]
-3.     j = i - 1
-4.     while j >= 0 and A[j] > key
-5.         A[j + 1] = A[j]
-6.         j = j - 1
-7.     A[j + 1] = key
+void printArray(int arr[], int n) {
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
 
+int main() {
+    int arr[] = {5, 3, 8, 6, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    insertionSort(arr, n);
+    printArray(arr, n);
+    return 0;
+}
 ```
 
+### **Time Complexity Analysis**
+- **Best Case (`O(n)`)**: Already sorted array.
+- **Worst Case (`O(n²)`)**: Reverse sorted array.
+- **Average Case (`O(n²)`)**: Random order.
+
+### **Advantages**
+✔ Efficient for small data sets.
+✔ Simple and easy to implement.
+✔ Stable sorting algorithm (preserves the order of equal elements).
+
+### **Disadvantages**
+✖ Not suitable for large data sets due to `O(n²)` complexity.
+✖ Inefficient compared to Quick Sort and Merge Sort.
+
+### **Applications**
+📌 **Used in small databases where simplicity matters.**
+📌 **Effective for nearly sorted data (adaptive sorting).**
+📌 **Used in educational purposes to teach sorting concepts.**
+
+### **Visualization Using Mermaid.js**
 ```mermaid
 graph TD;
     A[5, 3, 8, 6, 2] --> B[3, 5, 8, 6, 2];
     B --> C[3, 5, 8, 6, 2];
     C --> D[3, 5, 6, 8, 2];
     D --> E[2, 3, 5, 6, 8];
+```
 
+```mermaid
+graph LR;
+    A[Unsorted: 5, 3, 8, 6, 2] -->|Insert 3| B[3, 5, 8, 6, 2];
+    B -->|Insert 8| C[3, 5, 8, 6, 2];
+    C -->|Insert 6| D[3, 5, 6, 8, 2];
+    D -->|Insert 2| E[2, 3, 5, 6, 8];
+    E -->|Sorted| F[(Final Sorted Array)]
 ```
 
 ---
-
 
 ## Contribution Guidelines
 
